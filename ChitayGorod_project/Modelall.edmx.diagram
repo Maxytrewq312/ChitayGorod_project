@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fa76e9498e5a4e2d93b738a5b1909224" Name="Diagram1">
+        <EntityTypeShape EntityType="ChitayGorod_projectModel.BooksSet" Width="1.5" PointX="5.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChitayGorod_projectModel.PosetitelSet" Width="1.5" PointX="1.125" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChitayGorod_projectModel.ProdavecSet" Width="1.5" PointX="9.375" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChitayGorod_projectModel.UchetProdSet" Width="1.5" PointX="5.125" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="ChitayGorod_projectModel.FK_UchetProdSet_BooksSet" ManuallyRouted="false" />
+        <AssociationConnector Association="ChitayGorod_projectModel.FK_UchetProdSet_PosetitelSet" ManuallyRouted="false" />
+        <AssociationConnector Association="ChitayGorod_projectModel.FK_UchetProdSet_ProdavecSet" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

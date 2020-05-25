@@ -16,5 +16,29 @@ namespace ChitayGorod_project
         {
             InitializeComponent();
         }
+
+        private void buttonPosetitel_Click(object sender, EventArgs e)
+        {
+            Form formPos = new FormPosetitel();
+            formPos.Show();
+        }
+
+        private void buttonProdavec_Click(object sender, EventArgs e)
+        {
+            Form formProd = new FormProdavec();
+            formProd.Show();
+        }
+
+        private void buttonBooks_Click(object sender, EventArgs e)
+        {
+            Form formbook = new FormBooks();
+            formbook.Show();
+        }
+
+        private void buttonUchet_Click(object sender, EventArgs e)
+        {
+            Form formuchet = new FormUchetProd();
+            formuchet.Show();
+        }
     }
 }

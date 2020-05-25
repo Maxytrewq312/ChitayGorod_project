@@ -8,7 +8,7 @@ namespace ChitayGorod_project
 {
     static class Program
     {
-        public static 
+        public static ChitayGorod_projectEntities CGDb = new ChitayGorod_projectEntities();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
