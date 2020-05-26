@@ -5,6 +5,15 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="Хранилище ChitayGorod_projectModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Autorization">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
         <EntityType Name="BooksSet">
           <Key>
             <PropertyRef Name="Id" />
@@ -80,6 +89,7 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="Хранилище ChitayGorod_projectModelContainer">
+          <EntitySet Name="Autorization" EntityType="Self.Autorization" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="BooksSet" EntityType="Self.BooksSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PosetitelSet" EntityType="Self.PosetitelSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ProdavecSet" EntityType="Self.ProdavecSet" Schema="dbo" store:Type="Tables" />
@@ -102,6 +112,15 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ChitayGorod_projectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Autorization">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
         <EntityType Name="BooksSet">
           <Key>
             <PropertyRef Name="Id" />
@@ -182,7 +201,8 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="ChitayGorod_projectEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ChitayGorod_projectEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Autorization" EntityType="Self.Autorization" />
           <EntitySet Name="BooksSet" EntityType="Self.BooksSet" />
           <EntitySet Name="PosetitelSet" EntityType="Self.PosetitelSet" />
           <EntitySet Name="ProdavecSet" EntityType="Self.ProdavecSet" />
@@ -205,7 +225,17 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище ChitayGorod_projectModelContainer" CdmEntityContainer="ChitayGorod_projectEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ChitayGorod_projectModelContainer" CdmEntityContainer="ChitayGorod_projectEntities1">
+          <EntitySetMapping Name="Autorization">
+            <EntityTypeMapping TypeName="ChitayGorod_projectModel.Autorization">
+              <MappingFragment StoreEntitySet="Autorization">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="BooksSet">
             <EntityTypeMapping TypeName="ChitayGorod_projectModel.BooksSet">
               <MappingFragment StoreEntitySet="BooksSet">

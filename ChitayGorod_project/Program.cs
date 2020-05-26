@@ -8,7 +8,7 @@ namespace ChitayGorod_project
 {
     static class Program
     {
-        public static ChitayGorod_projectEntities CGDb = new ChitayGorod_projectEntities();
+        public static ChitayGorod_projectEntities1 CGDb = new ChitayGorod_projectEntities1();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -17,7 +17,7 @@ namespace ChitayGorod_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormAutorization());
         }
     }
 }

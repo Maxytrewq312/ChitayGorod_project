@@ -4,11 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="fa76e9498e5a4e2d93b738a5b1909224" Name="Diagram1">
-        <EntityTypeShape EntityType="ChitayGorod_projectModel.BooksSet" Width="1.5" PointX="5.125" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ChitayGorod_projectModel.PosetitelSet" Width="1.5" PointX="1.125" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="ChitayGorod_projectModel.ProdavecSet" Width="1.5" PointX="9.375" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="ChitayGorod_projectModel.UchetProdSet" Width="1.5" PointX="5.125" PointY="3.75" IsExpanded="true" />
+      <Diagram DiagramId="771a4c1962f64047b6bcbc4c11b6997d" Name="Diagram1">
+        <EntityTypeShape EntityType="ChitayGorod_projectModel.Autorization" Width="1.5" PointX="6.5" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChitayGorod_projectModel.BooksSet" Width="1.5" PointX="6.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChitayGorod_projectModel.PosetitelSet" Width="1.5" PointX="1.875" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChitayGorod_projectModel.ProdavecSet" Width="1.5" PointX="11.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChitayGorod_projectModel.UchetProdSet" Width="1.5" PointX="6.5" PointY="4.625" IsExpanded="true" />
         <AssociationConnector Association="ChitayGorod_projectModel.FK_UchetProdSet_BooksSet" ManuallyRouted="false" />
         <AssociationConnector Association="ChitayGorod_projectModel.FK_UchetProdSet_PosetitelSet" ManuallyRouted="false" />
         <AssociationConnector Association="ChitayGorod_projectModel.FK_UchetProdSet_ProdavecSet" ManuallyRouted="false" />

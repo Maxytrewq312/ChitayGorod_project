@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\Admin\source\repos\ChitayGorod_project\ChitayGorod_project\Modelall.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\Admin\source\repos\ChitayGorod_project\ChitayGorod_project\ModelAll.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

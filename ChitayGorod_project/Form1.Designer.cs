@@ -1,6 +1,6 @@
 ﻿namespace ChitayGorod_project
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -110,7 +110,7 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -122,7 +122,7 @@
             this.Controls.Add(this.buttonProdavec);
             this.Controls.Add(this.buttonPosetitel);
             this.Controls.Add(this.labelHello);
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.Text = "Главная страница";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

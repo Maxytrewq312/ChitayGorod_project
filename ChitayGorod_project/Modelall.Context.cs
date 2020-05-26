@@ -13,10 +13,10 @@ namespace ChitayGorod_project
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ChitayGorod_projectEntities : DbContext
+    public partial class ChitayGorod_projectEntities1 : DbContext
     {
-        public ChitayGorod_projectEntities()
-            : base("name=ChitayGorod_projectEntities")
+        public ChitayGorod_projectEntities1()
+            : base("name=ChitayGorod_projectEntities1")
         {
         }
     
@@ -25,6 +25,7 @@ namespace ChitayGorod_project
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Autorization> Autorization { get; set; }
         public virtual DbSet<BooksSet> BooksSet { get; set; }
         public virtual DbSet<PosetitelSet> PosetitelSet { get; set; }
         public virtual DbSet<ProdavecSet> ProdavecSet { get; set; }

@@ -52,7 +52,8 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(12, 46);
+            this.labelName.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelName.Location = new System.Drawing.Point(9, 46);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(29, 13);
             this.labelName.TabIndex = 0;
@@ -61,16 +62,18 @@
             // labelSurname
             // 
             this.labelSurname.AutoSize = true;
-            this.labelSurname.Location = new System.Drawing.Point(9, 113);
+            this.labelSurname.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSurname.Location = new System.Drawing.Point(9, 123);
             this.labelSurname.Name = "labelSurname";
-            this.labelSurname.Size = new System.Drawing.Size(56, 13);
+            this.labelSurname.Size = new System.Drawing.Size(53, 13);
             this.labelSurname.TabIndex = 1;
             this.labelSurname.Text = "Фамилия";
             // 
             // labelPatronymic
             // 
             this.labelPatronymic.AutoSize = true;
-            this.labelPatronymic.Location = new System.Drawing.Point(9, 183);
+            this.labelPatronymic.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPatronymic.Location = new System.Drawing.Point(9, 199);
             this.labelPatronymic.Name = "labelPatronymic";
             this.labelPatronymic.Size = new System.Drawing.Size(54, 13);
             this.labelPatronymic.TabIndex = 2;
@@ -79,66 +82,77 @@
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
-            this.labelPhone.Location = new System.Drawing.Point(9, 258);
+            this.labelPhone.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPhone.Location = new System.Drawing.Point(9, 279);
             this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(52, 13);
+            this.labelPhone.Size = new System.Drawing.Size(50, 13);
             this.labelPhone.TabIndex = 3;
             this.labelPhone.Text = "Телефон";
             // 
             // textBoxName
             // 
+            this.textBoxName.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxName.Location = new System.Drawing.Point(12, 62);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(177, 20);
+            this.textBoxName.Size = new System.Drawing.Size(177, 21);
             this.textBoxName.TabIndex = 4;
             // 
             // textBoxSurname
             // 
-            this.textBoxSurname.Location = new System.Drawing.Point(12, 129);
+            this.textBoxSurname.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSurname.Location = new System.Drawing.Point(12, 139);
             this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(177, 20);
+            this.textBoxSurname.Size = new System.Drawing.Size(177, 21);
             this.textBoxSurname.TabIndex = 5;
             // 
             // textBoxPatronymic
             // 
-            this.textBoxPatronymic.Location = new System.Drawing.Point(12, 199);
+            this.textBoxPatronymic.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPatronymic.Location = new System.Drawing.Point(12, 215);
             this.textBoxPatronymic.Name = "textBoxPatronymic";
-            this.textBoxPatronymic.Size = new System.Drawing.Size(177, 20);
+            this.textBoxPatronymic.Size = new System.Drawing.Size(177, 21);
             this.textBoxPatronymic.TabIndex = 6;
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.Location = new System.Drawing.Point(12, 274);
+            this.textBoxPhone.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPhone.Location = new System.Drawing.Point(12, 295);
             this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(177, 20);
+            this.textBoxPhone.Size = new System.Drawing.Size(177, 21);
             this.textBoxPhone.TabIndex = 7;
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(411, 376);
+            this.buttonAdd.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAdd.Location = new System.Drawing.Point(411, 390);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(120, 48);
             this.buttonAdd.TabIndex = 8;
             this.buttonAdd.Text = "Создать";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(537, 376);
+            this.buttonEdit.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEdit.Location = new System.Drawing.Point(537, 390);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(120, 48);
             this.buttonEdit.TabIndex = 9;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDel
             // 
-            this.buttonDel.Location = new System.Drawing.Point(663, 376);
+            this.buttonDel.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDel.Location = new System.Drawing.Point(663, 390);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(120, 48);
             this.buttonDel.TabIndex = 10;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // listViewPoset
             // 
@@ -148,16 +162,18 @@
             this.фамилия,
             this.отчество,
             this.Телефон});
+            this.listViewPoset.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewPoset.FullRowSelect = true;
             this.listViewPoset.GridLines = true;
             this.listViewPoset.HideSelection = false;
-            this.listViewPoset.Location = new System.Drawing.Point(254, 46);
+            this.listViewPoset.Location = new System.Drawing.Point(232, 46);
             this.listViewPoset.MultiSelect = false;
             this.listViewPoset.Name = "listViewPoset";
-            this.listViewPoset.Size = new System.Drawing.Size(529, 269);
+            this.listViewPoset.Size = new System.Drawing.Size(551, 297);
             this.listViewPoset.TabIndex = 11;
             this.listViewPoset.UseCompatibleStateImageBehavior = false;
             this.listViewPoset.View = System.Windows.Forms.View.Details;
+            this.listViewPoset.SelectedIndexChanged += new System.EventHandler(this.listViewPoset_SelectedIndexChanged);
             // 
             // Id
             // 
@@ -177,7 +193,7 @@
             // отчество
             // 
             this.отчество.Text = "Отчество";
-            this.отчество.Width = 129;
+            this.отчество.Width = 151;
             // 
             // Телефон
             // 
